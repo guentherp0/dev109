@@ -6,11 +6,11 @@ body {
 h1 {
 	text-align:center;
 	color:blue;
-	font-family:'DancingScriptRegular‘;
+	font-family: 'Dancing Script', sans-serif;
 	font-size:400%;}
 
 p {
-	font-family: 'DancingScriptRegular';
+	font-family: 'Dancing Script', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size:200%;}
