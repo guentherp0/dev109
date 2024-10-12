@@ -2,12 +2,11 @@ body{
   text-align:center;
 }
 
-h1, #footer{
+#title, #footer{
   background:lightblue;
   padding:10px;
   margin:10px;
   font-family: 'SetpersetRegular';
-  color:white;
 }
 
 #container{
