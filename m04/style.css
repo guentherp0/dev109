@@ -3,6 +3,7 @@
   color: white;
   text-align: center;}
 body {
+  background-image: url("ribbons.png");
   width: 90%;
   margin: 0 auto;}
 #content {
