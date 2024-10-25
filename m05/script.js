@@ -1,6 +1,6 @@
 var table = prompt('Enter a number');               // Unit of table
 var i = 1;                                          // Set counter to 1
-var msg = var msg = '<br />';                                       // Message
+var msg = var msg = '';                                       // Message
 
 
 /*
