@@ -1,6 +1,6 @@
 var table = prompt('Enter a number');               // Unit of table
 var i = 1;                                          // Set counter to 1
-var msg = var msg = '<h2>Multiplication Table</h2>';                                       // Message
+var msg = var msg = '<h2>Multiplication Table</h2><br />';                                       // Message
 
 
 /*
