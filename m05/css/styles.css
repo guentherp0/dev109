@@ -6,7 +6,7 @@ body {
 	font-family: 'Wellfleet', times, serif;
 	font-size: 150%;
 	margin: 0px 0px 0px 0px;}
-/*
+
 h1 {
 	background-image: url('bullseye-logo.png');
 	background-repeat: no-repeat;
@@ -15,8 +15,9 @@ h1 {
 	overflow: hidden;
 	height: 109px;
 	width: 643px;
-	margin: 40px auto;}
-*/
+	margin: 40px auto;
+	background-image: url('bullseye-logo.png');}
+
 #teacher {
 	float:right;
 	margin:0px 30px 0px 0px;}
