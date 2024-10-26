@@ -9,6 +9,9 @@ body {
 
 h1 {
 	background-image: url('/images/bullseye-logo.png');
+	background-image: url('../images/bullseye-logo.png');
+	background-image: url('images/bullseye-logo.png');
+	background-image: url('bullseye-logo.png');
 	background-color: blue;
 	background-repeat: no-repeat;
 	text-indent: 100%;
