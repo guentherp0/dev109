@@ -4,3 +4,5 @@ function createRhombus() {
       var evenColor = document.getElementById('even-color').value;
       var symbol = document.getElementById('symbol').value;
       var rhombusContainer = document.getElementById('rhombus-output');
+
+      rhombusContainer.innerHTML += height + oddColor + evenColor + symbol
