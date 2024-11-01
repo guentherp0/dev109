@@ -21,7 +21,7 @@ function createRhombus() {
             }
             txt += "<br>"
       } 
-      for (let i = height; i > 0; i--) {
+      for (let i = height - 1; i >= 0; i--) {
             for (let j = 0; j < -(i - height + 1); j++){
                   txt += symcol(symbol, "coral");
             }
