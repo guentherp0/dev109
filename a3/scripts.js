@@ -7,10 +7,14 @@ function createRhombus() {
 
       var txt = "";
       for (let i = 0; i < height; i++) {
-            txt += symbol;
+            txt += symcol(symbol, oddColor);
       } 
 
-      rhombusContainer.innerHTML = txt;
+      rhombusContainer.innerHTML += txt;
 
       console.log("ran")
+}
+
+function symcol(sym, col) {
+      return "<span style=\"color: " + col + "\">" + sym + "</span>"
 }
