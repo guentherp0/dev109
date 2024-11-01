@@ -11,5 +11,6 @@ function createRhombus() {
       } 
 
       rhombusContainer.innerHTML = txt;
-      
+
+      console.log("ran")
 }
