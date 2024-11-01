@@ -8,7 +8,7 @@ function createRhombus() {
       var txt = "";
       for (let i = 0; i < height; i++) {
             for (let j = 0; j < (i - height); j++){
-                  txt += symcol(symbol, "white");
+                  txt += symcol(symbol, "coral");
             }
             for (let j = 0; j < i; j++){
                   txt += symcol(symbol, oddColor);
