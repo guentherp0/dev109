@@ -5,6 +5,6 @@ function createRhombus() {
       var symbol = document.getElementById('symbol').value;
       var rhombusContainer = document.getElementById('rhombus-output');
 
-      rhombusContainer.innerHTML += height + oddColor + evenColor + symbol;
+      rhombusContainer.innerHTML = height + oddColor + evenColor + symbol;
       console.log('jo');
 }
