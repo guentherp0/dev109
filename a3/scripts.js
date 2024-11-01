@@ -11,11 +11,13 @@ function createRhombus() {
                   txt += symcol(symbol, "white");
             }
             for (let j = 0; j <= i; j++){
-                  txt += symcol(symbol, oddColor);
+                  let color = j % 2 ? oddColor : evenColor;
+                  txt += symcol(symbol, color);
             }
             txt += " "
             for (let j = 0; j <= i; j++){
-                  txt += symcol(symbol, oddColor);
+                  let color = j % 2 ? oddColor : evenColor;
+                  txt += symcol(symbol, color);
             }
             for (let j = 0; j < -(i - height + 1); j++){
                   txt += symcol(symbol, "white");
@@ -28,11 +30,13 @@ function createRhombus() {
                   txt += symcol(symbol, "white");
             }
             for (let j = 0; j <= i; j++){
-                  txt += symcol(symbol, oddColor);
+                  let color = j % 2 ? oddColor : evenColor;
+                  txt += symcol(symbol, color);
             }
             txt += " "
             for (let j = 0; j <= i; j++){
-                  txt += symcol(symbol, oddColor);
+                  let color = j % 2 ? oddColor : evenColor;
+                  txt += symcol(symbol, color);
             }
             for (let j = 0; j < -(i - height + 1); j++){
                   txt += symcol(symbol, "white");
