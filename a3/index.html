@@ -15,7 +15,7 @@
       <input type="number" id="height" name="height" min="1" required><br><br>
 
       <label for="odd-color">Color for odd positions:</label>
-      <select id="odd-color" name="odd-color" required>
+      <select id="odd-color" name="odd-color" required size=8>
         <option value="yellow">Yellow</option>
         <option value="purple">Purple</option>
         <option value="cyan">Cyan</option>
@@ -27,7 +27,7 @@
       </select><br><br>
   
       <label for="even-color">Color for even positions:</label>
-      <select id="even-color" name="even-color" required>
+      <select id="even-color" name="even-color" required size=8>
         <option value="yellow">Yellow</option>
         <option value="purple">Purple</option>
         <option value="cyan">Cyan</option>
@@ -39,10 +39,12 @@
       </select><br><br>
     
       <label for="symbol">Symbol:</label>
-      <select id="symbol" name="symbol" required>
+      <select id="symbol" name="symbol" required size=5>
         <option value="*">*</option>
         <option value="^">^</option>
         <option value="%">%</option>
+        <option value="|">|</option>
+        <option value="7">7</option>
       </select><br><br>
   
       <button type="button" onclick="createRhombus()">Create Rhombus</button>
