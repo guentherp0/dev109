@@ -6,39 +6,39 @@ function createRhombus() {
       var rhombusContainer = document.getElementById('rhombus-output');
 
       var txt = "";
-      for (let i = 0; i < height; i++) {
-            for (let j = 0; j < -(i - height + 1); j++){
+      for (var i = 0; i < height; i++) {
+            for (var j = 0; j < -(i - height + 1); j++){
                   txt += symcol(" ", "white");
             }
-            for (let j = 0; j <= i; j++){
-                  let color = j % 2 ? evenColor : oddColor;
+            for (var j = 0; j <= i; j++){
+                  var color = j % 2 ? evenColor : oddColor;
                   txt += symcol(symbol, color);
             }
             txt += " "
-            for (let j = 0; j <= i; j++){
-                  let color = j % 2 ? evenColor : oddColor;
+            for (var j = 0; j <= i; j++){
+                  var color = j % 2 ? evenColor : oddColor;
                   txt += symcol(symbol, color);
             }
-            for (let j = 0; j < -(i - height + 1); j++){
+            for (var j = 0; j < -(i - height + 1); j++){
                   txt += symcol(" ", "white");
             }
             txt += "<br>"
       } 
       txt += "<br>"
-      for (let i = height - 1; i >= 0; i--) {
-            for (let j = 0; j < -(i - height + 1); j++){
+      for (var i = height - 1; i >= 0; i--) {
+            for (var j = 0; j < -(i - height + 1); j++){
                   txt += symcol(" ", "white");
             }
-            for (let j = 0; j <= i; j++){
-                  let color = j % 2 ? evenColor : oddColor;
+            for (var j = 0; j <= i; j++){
+                  var color = j % 2 ? evenColor : oddColor;
                   txt += symcol(symbol, color);
             }
             txt += " "
-            for (let j = 0; j <= i; j++){
-                  let color = j % 2 ? evenColor : oddColor;
+            for (var j = 0; j <= i; j++){
+                  var color = j % 2 ? evenColor : oddColor;
                   txt += symcol(symbol, color);
             }
-            for (let j = 0; j < -(i - height + 1); j++){
+            for (var j = 0; j < -(i - height + 1); j++){
                   txt += symcol(" ", "white");
             }
             txt += "<br>"
