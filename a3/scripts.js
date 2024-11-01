@@ -7,3 +7,4 @@ function createRhombus() {
 
       rhombusContainer.innerHTML += height + oddColor + evenColor + symbol;
       console.log('jo');
+}
