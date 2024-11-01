@@ -6,8 +6,8 @@ function createRhombus() {
       var rhombusContainer = document.getElementById('rhombus-output');
 
       var txt = "";
-      for (let i = 0; i <= height; i++) {
-            for (let j = 0; j <= -(i - height); j++){
+      for (let i = 0; i < height; i++) {
+            for (let j = 0; j < -(i - height + 1); j++){
                   txt += symcol(symbol, "coral");
             }
             for (let j = 0; j <= i; j++){
