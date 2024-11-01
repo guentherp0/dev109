@@ -22,7 +22,7 @@ function createRhombus() {
             }
             txt += "<br>"
       } 
-      txt += " "
+      txt += "<br>"
       for (let i = height - 1; i >= 0; i--) {
             for (let j = 0; j < -(i - height + 1); j++){
                   txt += symcol(symbol, "white");
@@ -30,6 +30,7 @@ function createRhombus() {
             for (let j = 0; j <= i; j++){
                   txt += symcol(symbol, oddColor);
             }
+            txt += " "
             for (let j = 0; j <= i; j++){
                   txt += symcol(symbol, oddColor);
             }
