@@ -7,7 +7,7 @@ function createRhombus() {
 
       var txt = "";
       for (let i = 0; i < height; i++) {
-            txt += symbol * i + "<br>";
+            txt += symbol;
       } 
 
       rhombusContainer.innerHTML = txt;
