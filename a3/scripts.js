@@ -7,12 +7,16 @@ function createRhombus() {
 
       var txt = "";
       for (let i = 0; i < height; i++) {
-            txt += symcol(symbol, oddColor);
+            for (let j = 0; j < (i - height); j++){
+                  txt += symcol(symbol, "white");
+            }
+            for (let j = 0; j < i; j++){
+                  txt += symcol(symbol, oddColor);
+            }
+            txt += "<br>"
       } 
 
-      rhombusContainer.innerHTML += txt;
-
-      console.log("ran")
+      rhombusContainer.innerHTML = txt;
 }
 
 function symcol(sym, col) {
