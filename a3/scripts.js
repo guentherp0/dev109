@@ -5,6 +5,11 @@ function createRhombus() {
       var symbol = document.getElementById('symbol').value;
       var rhombusContainer = document.getElementById('rhombus-output');
 
-      rhombusContainer.innerHTML = height + oddColor + evenColor + symbol;
-      console.log('jo');
+      var txt = "";
+      for (let i = 0; i < height; i++) {
+            txt += symbol * i + "<br>";
+      } 
+
+      rhombusContainer.innerHTML = txt;
+      
 }
