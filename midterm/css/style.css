@@ -2,11 +2,13 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	font-family: 'Consolas', monospace;
+}
+body {
 	background-image: url("../images/ribbon.png");
 }
-body, h1 {
+h1 {
 	color: green;
-	font-family: 'Consolas', monospace;
 }
 div {
 	color: red;
