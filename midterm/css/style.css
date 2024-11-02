@@ -5,7 +5,10 @@
 	text-align: center;
 	background-image: url("../images/ribbon.png");
 }
-#nav {
+h1 {
+	color: green;
+}
+div {
 	color: red;
 	background-color: red;
 }
