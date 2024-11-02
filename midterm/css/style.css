@@ -1,12 +1,12 @@
 * {
-	font-family: 'Consolas', monospace;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	background-image: url("../images/ribbon.png");
 }
-h1 {
+body, h1 {
 	color: green;
+	font-family: 'Consolas', monospace;
 }
 div {
 	color: red;
