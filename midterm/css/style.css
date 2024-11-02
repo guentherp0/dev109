@@ -1,1 +1,6 @@
-
+* {
+	font-family: 'Consolas', monospace;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
