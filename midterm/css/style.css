@@ -10,7 +10,7 @@ h1 {
 	text-align: center;
 	color: white;
 }
-p {
+p, label {
 	color: white;
 }
 table, th, td {
