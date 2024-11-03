@@ -13,6 +13,17 @@ h1 {
 p {
 	color: white;
 }
+table, th, td {
+  border: 1px solid;
+}
+th {
+	background-color: #04AA6D;
+	color: white;
+}
+td {
+	background-color: white;
+	color: maroon;
+}
 #nav {
 	color: blue;
 	background-color: pink;
