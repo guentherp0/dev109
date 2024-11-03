@@ -25,8 +25,12 @@ td {
 	color: maroon;
 }
 #nav {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	position: fixed;  /* Locks it in place */
 	top: 0;           /* Sticks it to the top */
+	width: 100%;
 	color: blue;
 	background-color: pink;
 }
