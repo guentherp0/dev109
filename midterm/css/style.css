@@ -10,7 +10,7 @@ h1 {
 	align-items: center;
 	text-align: center;
 }
-div {
-	color: red;
-	background-color: blue;
+#nav {
+	color: blue;
+	background-color: pink;
 }
