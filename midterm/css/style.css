@@ -27,7 +27,6 @@ td {
 #nav {
 	position: fixed;  /* Locks it in place */
 	top: 0;           /* Sticks it to the top */
-	width: 100%;      /* Full width */
 	color: blue;
 	background-color: pink;
 }
