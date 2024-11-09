@@ -12,7 +12,7 @@ function addItem() {
         // Add the new item to the list (ul)
         document.getElementById('todo').appendChild(newItem);
 
-        // Clear the text box after adding the item
+        // Extra Credit: Clear the text box after adding the item
         document.getElementById('itemInput').value = "";
     }
 }
