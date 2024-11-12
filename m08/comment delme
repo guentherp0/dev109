@@ -1,3 +1,0 @@
-add comment saying: extra credit
-
-What I learned from M08, Chatper 5, etc.: It is an exceptional step for me to finally begin unsterstanding the DOM. In previous modules the javascript and html files felt largely disconnected and awkward to use together, but thankfully the DOM gives a framework to comprehensively edit the html file with javascript. Html always felt mildly elusive since it's not really a programming language, and many common programming tools were unavailable without the javascript, but now the javascript is (more or less) here. In addition, it was also nice to solidify my understanding of inputs and buttons to call functions in the javascript file.
