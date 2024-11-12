@@ -12,4 +12,5 @@ var nav_txt = `
 
 // finds the nav div
 var nav = document.getElementById('nav');
+// sets the navigation bar uniformly for all of the pages
 nav.innerHTML = nav_txt;
