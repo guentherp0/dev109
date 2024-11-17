@@ -12,7 +12,7 @@ contactForm.addEventListener('submit', function (event) {
   const validationResult = validateForm();
   
   // temp
-  errorMessageDiv.innerHTML = validationResult.isValid;
+  errorMessageDiv.innerHTML = "hate u <3";
 });
 
 function validateForm(){
