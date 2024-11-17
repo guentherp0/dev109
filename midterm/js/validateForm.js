@@ -11,7 +11,7 @@ function validateForm(){
   }
   
   var validLastname=false;
-  var firstname = document.getElementById("lastname").value;
+  var lastname = document.getElementById("lastname").value;
   if (lastname==="null" || lastname==="" || lastname.length > 50) {
     errorMessages += "<p class=\"error\">The lastname is required and cannot be greater than 50 characters</p>";
   }
