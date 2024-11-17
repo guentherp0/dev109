@@ -34,7 +34,11 @@ td {
 	color: blue;
 	background-color: pink;
 }
-#errorMessages, .error {
+#errorMessages {
+	color: red;
+	background-color: white;
+}
+p.error {
 	color: red;
 	background-color: white;
 }
