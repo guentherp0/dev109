@@ -29,6 +29,51 @@ function validateForm(){
   else {
     validEmail = true;
   }
+  
+  var validPhone=false;
+  var phone = document.getElementById("phone").value;
+  if (isNaN(phone) || phone.lenght > 15 || phone===null || phone==="") {
+    errorMessages += "<p class=\"error\">Invalid phone number</p>";
+  }
+  else {
+    validPhone = true;
+  }
+  
+  var validUsername=false;
+  var username = document.getElementById("username").value;
+  if (username==="null" || username==="" || username.length > 12) {
+    errorMessages += "<p class=\"error\">The username is required and cannot be greater than 12 characters</p>";
+  }
+  else {
+    validUsername = true;
+  }
+  
+  var validPassword=false;
+  var password = document.getElementById("password").value;
+  if (password==="null" || password==="" || password.length > 7) {
+    errorMessages += "<p class=\"error\">The password is required and cannot be greater than 7 characters</p>";
+  }
+  else {
+    validPassword = true;
+  }
+  
+  var validAddress=false;
+  var address = document.getElementById("address").value;
+  if (address==="null" || address==="") {
+    errorMessages += "<p class=\"error\">The address is required</p>";
+  }
+  else {
+    validAddress = true;
+  }
+  
+  var validCity=false;
+  var city = document.getElementById("city").value;
+  if (city==="null" || city==="") {
+    errorMessages += "<p class=\"error\">The city is required</p>";
+  }
+  else {
+    validCity = true;
+  }
 
 
   
