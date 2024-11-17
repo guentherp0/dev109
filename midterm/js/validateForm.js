@@ -76,7 +76,7 @@ function validateForm(){
   }
 
   var state = document.getElementById("state").value;
-  var validState=true:
+  var validState=true;
   // no need to verify
   
   var country = document.getElementById("country").value;
