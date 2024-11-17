@@ -85,7 +85,7 @@ function validateForm(){
   
   var validZipcode=false;
   var zipcode = document.getElementById("zipcode").value;
-  if ((country === "usa" && zipcode.length > 5) || zipcode === "null" || zipcode ==="") {
+  if (country === "usa" && zipcode.length > 5) {
     errorMessages += "<p class=\"error\">The zipcode is invalid</p>";
   }
   else {
