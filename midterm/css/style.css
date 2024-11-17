@@ -34,7 +34,7 @@ td {
 	color: blue;
 	background-color: pink;
 }
-#errorMessages{
+#errorMessages, .error {
 	color: red;
 	background-color: white;
 }
