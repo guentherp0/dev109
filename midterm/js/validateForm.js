@@ -105,7 +105,7 @@ function validateForm(){
       state: state,
       country: country,
       zipcode: zipcode,
-      comments: comments,
+      message: message,
     }).toString();
 
     const url = `https://guentherp0.github.io/dev109/midterm/thankyou.html?${params}`;
