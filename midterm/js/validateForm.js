@@ -1,10 +1,12 @@
 // get our HTML attributes
 var contactForm = getElementById('contactForm');
-var errorMessageDiv = getElementById("errorMessages");
 
 // stop the button from actually submitting, instead using custom logic
-.addEventListener('submit', function (event) {
+contactForm.addEventListener('submit', function (event) {
   event.preventDefault();
+
+  // where the error messages eventually wind up
+  const errorMessageDiv = getElementById("errorMessages");
   
   // the results of the function
   const validationResult = validateForm();
