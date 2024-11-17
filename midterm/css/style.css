@@ -34,3 +34,7 @@ td {
 	color: blue;
 	background-color: pink;
 }
+#errorMessages{
+	color: red;
+	background-color: white;
+}
