@@ -112,5 +112,6 @@ function validateForm(){
 
     window.open(url, '_self');
   }
-  document.getElementById("errorMessages").innerHTML = errorMessages;
+  //document.getElementById("errorMessages").innerHTML = errorMessages;
+  document.getElementById("errorMessages").innerHTML = "<p class=\"error\">WHYWHYWHY</p>";
 }
