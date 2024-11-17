@@ -9,6 +9,6 @@ function validateForm(){
 
 //5) return the status of each field
   var errorMessages = "";
-  errorMessages += ":(";
+  errorMessages += "<p class=\"error\">:(</p>";
   document.getElementById("errorMessages").innerHTML = errorMessages;
 }
