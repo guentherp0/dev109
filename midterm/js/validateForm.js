@@ -1,9 +1,17 @@
+// get our HTML attributes
 var contactForm = getElementById('contactForm');
 var errorMessageDiv = getElementById("errorMessages");
 
-const validationResult = validateForm();
-
-errorMessageDiv.innerHTML = validationResult.isValid;
+// stop the button from actually submitting, instead using custom logic
+.addEventListener('submit', function (event) {
+  event.preventDefault();
+  
+  // the results of the function
+  const validationResult = validateForm();
+  
+  // temp
+  errorMessageDiv.innerHTML = validationResult.isValid;
+});
 
 function validateForm(){
 //1) create a variable to control status of each field. Assume that they are not valid
