@@ -32,7 +32,7 @@ function validateForm(){
   
   var validPhone=false;
   var phone = document.getElementById("phone").value;
-  if (isNaN(phone) || phone.lenght > 15 || phone===null || phone==="") {
+  if (isNaN(phone) || phone.length > 15 || phone===null || phone==="") {
     errorMessages += "<p class=\"error\">Invalid phone number</p>";
   }
   else {
