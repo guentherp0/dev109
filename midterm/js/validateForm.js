@@ -9,7 +9,6 @@ function validateForm(){
   else {
     validFirstname = true;
   }
-    
-  errorMessages += "<p class=\"error\">" + errorMessages + "</p>";
+  
   document.getElementById("errorMessages").innerHTML = errorMessages;
 }
