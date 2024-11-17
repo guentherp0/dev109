@@ -75,7 +75,42 @@ function validateForm(){
     validCity = true;
   }
 
-
+  var state = document.getElementById("state").value;
+  var validState=true:
+  // no need to verify
   
+  var country = document.getElementById("country").value;
+  var validCountry=true;
+  // no need to verify
+  
+  var validZipcode=false;
+  var zipcode = document.getElementById("zipcode").value;
+  if (country === "usa" && zipcode.length > 5) {
+    errorMessages += "<p class=\"error\">The zipcode is invalid</p>";
+  }
+  else {
+    validZipcode = true;
+  }
+
+  if (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode){
+    const params = new URLSearchParams({
+      firstname: firstname,
+      lastname: lastname,
+      email: email,
+      phone: phone,
+      username: username,
+      password: password,
+      address: address,
+      city: city,
+      state: state,
+      country: country,
+      zipcode: zipcode,
+      comments: comments,
+    }).toString();
+
+    const url = `https://guentherp0.github.io/dev109/midterm/thankyou.html?${params}`;
+
+    window.open(url, '_self');
+  }
   document.getElementById("errorMessages").innerHTML = errorMessages;
 }
