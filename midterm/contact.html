@@ -8,32 +8,38 @@
     <h1>Contact Me</h1>
     <div id="nav"></div>
     <script src="js/getNav.js"></script>
-
-    <div id="errorMessages"></div>
   
     <label for="firstname">First Name:</label><br>
-    <input type="text" id="firstname" name="firstname"><br><br>
+    <input type="text" id="firstname" name="firstname">
+	<div id="errorFirstname" class="error"></div><br>
     
     <label for="lastname">Last Name:</label><br>
-    <input type="text" id="lastname" name="lastname"><br><br>
+    <input type="text" id="lastname" name="lastname">
+	<div id="errorLastname" class="error"></div><br>
 
     <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br><br>
+    <input type="text" id="email" name="email"><br>
+	<div id="errorEmail" class="error"></div><br>
 
     <label for="phone">Phone:</label><br>
-    <input type="text" id="phone" name="phone"><br><br>
+    <input type="text" id="phone" name="phone"><br>
+	<div id="errorPhone" class="error"></div><br>
 
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
+    <input type="text" id="username" name="username"><br>
+	<div id="errorUsername" class="error"></div><br>
 
     <label for="password">Password:</label><br>
-    <input type="text" id="password" name="password"><br><br>
+    <input type="text" id="password" name="password"><br>
+	<div id="errorPassword" class="error"></div><br>
 
     <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address"><br><br>
+    <input type="text" id="address" name="address"><br>
+	<div id="errorAddress" class="error"></div><br>
 
     <label for="city">City:</label><br>
-    <input type="text" id="city" name="city"><br><br>
+    <input type="text" id="city" name="city"><br>
+	<div id="errorCity" class="error"></div><br>
 
     <label for="state">State:</label><br>
     <select name="state" id="state">
@@ -96,10 +102,11 @@
     </select><br><br>
 
     <label for="zipcode">Zip Code:</label><br>
-    <input type="text" id="zipcode" name="zipcode"><br><br>
+    <input type="text" id="zipcode" name="zipcode"><br>
+	  <div id="errorZip" class="error"></div><br>
 
     <label for="message">Comment:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
 
     <script src="js/validateForm.js"></script>
     <button onclick="validateForm()">Add</button>
