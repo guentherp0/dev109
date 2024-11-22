@@ -1,10 +1,18 @@
 function validateForm(){
-  var errorMessages = "";
+  var errorFirstname = "";
+  var errorLastname = "";
+  var errorEmail = "";
+  var errorPhone = "";
+  var errorUsername = "";
+  var errorPassword = "";
+  var errorAddress = "";
+  var errorCity = "";
+  var errorZip = "";
   
   var validFirstname=false;
   var firstname = document.getElementById("firstname").value;
   if (firstname==="null" || firstname==="" || firstname.length > 20) {
-    errorMessages += "<p class=\"error\">The firstname is required and cannot be greater than 20 characters</p>";
+    errorFirstname += "<p class=\"error\">The firstname is required and cannot be greater than 20 characters</p>";
   }
   else {
     validFirstname = true;
@@ -13,7 +21,7 @@ function validateForm(){
   var validLastname=false;
   var lastname = document.getElementById("lastname").value;
   if (lastname==="null" || lastname==="" || lastname.length > 50) {
-    errorMessages += "<p class=\"error\">The lastname is required and cannot be greater than 50 characters</p>";
+    errorLastname += "<p class=\"error\">The lastname is required and cannot be greater than 50 characters</p>";
   }
   else {
     validLastname = true;
@@ -24,7 +32,7 @@ function validateForm(){
   var atpos = email.indexOf("@");
   var dotpos = email.lastIndexOf(".");
   if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=email.length) {
-    errorMessages += "<p class=\"error\">Invalid email</p>";
+    errorEmail += "<p class=\"error\">Invalid email</p>";
   }
   else {
     validEmail = true;
@@ -33,7 +41,7 @@ function validateForm(){
   var validPhone=false;
   var phone = document.getElementById("phone").value;
   if (isNaN(phone) || phone.length > 15 || phone===null || phone==="") {
-    errorMessages += "<p class=\"error\">Invalid phone number</p>";
+    errorPhone += "<p class=\"error\">Invalid phone number</p>";
   }
   else {
     validPhone = true;
@@ -42,7 +50,7 @@ function validateForm(){
   var validUsername=false;
   var username = document.getElementById("username").value;
   if (username==="null" || username==="" || username.length > 12) {
-    errorMessages += "<p class=\"error\">The username is required and cannot be greater than 12 characters</p>";
+    errorUsername += "<p class=\"error\">The username is required and cannot be greater than 12 characters</p>";
   }
   else {
     validUsername = true;
@@ -51,7 +59,7 @@ function validateForm(){
   var validPassword=false;
   var password = document.getElementById("password").value;
   if (password==="null" || password==="" || password.length > 7) {
-    errorMessages += "<p class=\"error\">The password is required and cannot be greater than 7 characters</p>";
+    errorPassword += "<p class=\"error\">The password is required and cannot be greater than 7 characters</p>";
   }
   else {
     validPassword = true;
@@ -60,7 +68,7 @@ function validateForm(){
   var validAddress=false;
   var address = document.getElementById("address").value;
   if (address==="null" || address==="") {
-    errorMessages += "<p class=\"error\">The address is required</p>";
+    errorAddress += "<p class=\"error\">The address is required</p>";
   }
   else {
     validAddress = true;
@@ -69,7 +77,7 @@ function validateForm(){
   var validCity=false;
   var city = document.getElementById("city").value;
   if (city==="null" || city==="") {
-    errorMessages += "<p class=\"error\">The city is required</p>";
+    errorCity += "<p class=\"error\">The city is required</p>";
   }
   else {
     validCity = true;
@@ -86,7 +94,7 @@ function validateForm(){
   var validZipcode=false;
   var zipcode = document.getElementById("zipcode").value;
   if (country === "usa" && zipcode.length > 5) {
-    errorMessages += "<p class=\"error\">The zipcode is invalid</p>";
+    errorZip += "<p class=\"error\">The zipcode is invalid</p>";
   }
   else {
     validZipcode = true;
@@ -112,5 +120,13 @@ function validateForm(){
 
     window.open(url, '_self');
   }
-  document.getElementById("errorMessages").innerHTML = errorMessages;
+  document.getElementById("errorFirstname").innerHTML = errorFirstname;
+  document.getElementById("errorLastname").innerHTML = errorLastname;
+  document.getElementById("errorEmail").innerHTML = errorEmail;
+  document.getElementById("errorPhone").innerHTML = errorPhone;
+  document.getElementById("errorUsername").innerHTML = errorUsername;
+  document.getElementById("errorPassword").innerHTML = errorPassword;
+  document.getElementById("errorAddress").innerHTML = errorAddress;
+  document.getElementById("errorCity").innerHTML = errorCity;
+  document.getElementById("errorZip").innerHTML = errorZip;
 }
