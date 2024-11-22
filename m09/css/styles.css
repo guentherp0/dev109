@@ -1,1 +1,14 @@
-
+body {
+	height: 200px;
+	background: black;
+}
+button {
+	color: blue;
+	font-family: Garamond, "Times New Roman", Times, serif;
+}
+.dot {
+	height: 8px; width: 8px;
+	border-radius: 4px; /* rounds corners */
+	background: blue;
+	position: absolute;
+}
