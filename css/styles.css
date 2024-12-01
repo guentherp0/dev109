@@ -1,0 +1,19 @@
+#slideshowImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40%;
+	width: 40%;
+}
+.slideshowDesc {
+    flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+.slideshowDesc button {
+    margin: 5px;
+}
+.buttonContainer {
+    justify-content: center;
+    gap: 10px;
+}
