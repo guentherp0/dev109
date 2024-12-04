@@ -1,0 +1,61 @@
+* {
+	font-family: 'Consolas', monospace;
+}
+body {
+	background-image: url("../images/ribbon.png");
+}
+h1 {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+p, label, div {
+	color: white;
+}
+
+p {
+	margin: 0px;
+}
+
+.centered {
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: center;
+}
+
+.centered_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bullet {
+	padding: 0px 0px 30px 30px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+th {
+	background-color: #04AA6D;
+	color: white;
+}
+td {
+	background-color: white;
+	color: maroon;
+}
+#nav {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;  /* Locks it in place */
+	top: 0;           /* Sticks it to the top */
+	width: 100%;
+	color: blue;
+	background-color: pink;
+}
+.error {
+	color: red;
+	background-color: white;
+}
