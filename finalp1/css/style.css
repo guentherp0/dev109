@@ -34,17 +34,38 @@ p {
 	padding: 0px 0px 30px 30px;
 }
 
-table, th, td {
-  border: 1px solid;
+.validation-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
 }
-th {
-	background-color: #04AA6D;
-	color: white;
+
+.validation-row {
+    display: flex;
+    flex-direction: row;
 }
-td {
-	background-color: white;
-	color: maroon;
+
+.validation-row.header {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
 }
+
+.validation-cell {
+    flex: 1;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: maroon;
+}
+
+.validation-row.header .validation-cell {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
 #nav {
 	justify-content: center;
 	align-items: center;
@@ -59,6 +80,3 @@ td {
 	color: red;
 	background-color: white;
 }
-
-
-
