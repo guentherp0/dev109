@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Home</h1>
+    <div id="nav"></div>
+    <script src="js/getNav.js"></script>
+	
+	<audio autoplay loop hidden>
+        <source src="music/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const audio = document.querySelector('audio');
+			audio.muted = false; // Unmute if needed
+			audio.play().catch(err => console.log('Autoplay blocked:', err));
+		});
+	</script>
+	
+	<p class="centered">Welcome to my wonderful and enthralling portfolio/website. Here I store all of my information and projects on HTML that I worked on in the fall and winter of 2024.</p>
+	
+	<img src="images/welcome.gif" alt="welcome" height=300 width=300 class="centered_img">
+ </body>
+</html>
