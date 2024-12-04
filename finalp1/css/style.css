@@ -1,8 +1,8 @@
 * {
-	font-family: 'Consolas', monospace;
+	font-family: 'Consolas', monospace; /* everything is in consolas */
 }
 body {
-	background-image: url("../images/ribbon.png");
+	background-image: url("../images/ribbon.png"); /* the bg of every page */
 }
 h1 {
 	justify-content: center;
@@ -24,16 +24,18 @@ p {
 	text-align: center;
 }
 
-.centered_img {
+.centered_img { /* images are centered in a different way than standard divss and thus need a separate class */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bullet {
+.bullet { /* bullet points, just adds padding on the right and bottom */
 	padding: 0px 0px 30px 30px;
 }
 
+
+/* all of these validation styles are for the table on "validated.html" */
 .validation-wrapper {
     display: flex;
     flex-direction: column;
@@ -66,6 +68,7 @@ p {
 }
 
 
+/* the navigation bar at the top of the page on all pages */
 #nav {
 	justify-content: center;
 	align-items: center;
@@ -76,6 +79,8 @@ p {
 	color: blue;
 	background-color: pink;
 }
+
+/* errors specifically only show up on the "contact.html" */
 .error {
 	color: red;
 	background-color: white;
