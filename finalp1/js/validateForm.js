@@ -95,7 +95,7 @@ function validateForm(){
   
   var validZipcode=false;
   var zipcode = document.getElementById("zipcode").value;
-  if (country === "usa" && zipcode.length > 5) { // all non-usa zipcodes are accepted by default, usa zipcodes must be less than or equal to 5 digits
+  if (country === "usa" && zipcode.length > 5 || zipcode.length < 1) { // all non-usa zipcodes are accepted by default, usa zipcodes must be less than or equal to 5 digits
     errorZip += "<p class=\"error\">The zipcode is invalid</p>";
   }
   else {
