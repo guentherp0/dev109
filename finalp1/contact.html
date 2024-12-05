@@ -8,11 +8,13 @@
     <h1>Contact Me</h1>
     <div id="nav"></div>
     <script src="js/getNav.js"></script>
-  
+
+	  <!-- all of the entry boxes use the same framework, except states and country -->
     <label for="firstname">First Name:</label><br>
     <input type="text" id="firstname" name="firstname">
-	<div id="errorFirstname" class="error"></div><br>
-    
+	<div id="errorFirstname" class="error"></div><br> <!-- This div will store error messages about the users input if there is any -->
+
+	  <!-- all of these are the same as before -->
     <label for="lastname">Last Name:</label><br>
     <input type="text" id="lastname" name="lastname">
 	<div id="errorLastname" class="error"></div><br>
@@ -41,6 +43,7 @@
     <input type="text" id="city" name="city"><br>
 	<div id="errorCity" class="error"></div><br>
 
+	<!-- i typed all of the states manually :( -->
     <label for="state">State:</label><br>
     <select name="state" id="state">
       <option value="alabama">Alabama</option>
@@ -95,6 +98,7 @@
       <option value="wyoming">Wyoming</option>
     </select><br><br>
 
+	  <!-- keep it simple, stupid -->
     <label for="country">Country:</label><br>
     <select name="country" id="country">
       <option value="usa">United States</option>
@@ -105,10 +109,13 @@
     <input type="text" id="zipcode" name="zipcode"><br>
 	<div id="errorZip" class="error"></div><br>
 
+	  <!-- this is the comment box the user actually enters there comments -->
     <label for="message">Comment:</label><br>
     <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
 
+	  <!-- activates the javascript that does the verification -->
     <script src="js/validateForm.js"></script>
+	  <!-- The submit button -->
     <button onclick="validateForm()">Add</button>
     
   </body>
