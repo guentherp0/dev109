@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var nextButton = document.getElementById("slideshowNext");
 
     // Set the starting image and total number of images
-    var currentImageIndex = 1;
-    var totalImages = 5;
+    var currentImageIndex = 0;
+    var totalImages = 5
+    let autoSlideInterval;;
 
     // Descriptions for each image
     var descriptions = [
@@ -20,29 +21,41 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to update the image source and description
     function updateImageAndDescription() {
-        imgElement.src = "images/" + currentImageIndex + ".png";
+        imgElement.src = "images/" + (currentImageIndex + 1) + ".png";
 		// changes indexing from 1 to indexing from 0
-        descElement.textContent = descriptions[currentImageIndex - 1];
+        descElement.textContent = descriptions[currentImageIndex];
     }
 
-    // Event listener for the Previous button
-    prevButton.addEventListener("click", function() {
-        currentImageIndex = currentImageIndex - 1;
-        if (currentImageIndex < 1) {
-            currentImageIndex = totalImages; // Wrap to the last image
+    function showNext() {
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        updateImageAndDescription();
+    }
+
+    function showPrev() {
+        currentImageIndex = (currentImageIndex - 1) % totalImages;
+        if (currentImageIndex === -1) {
+            currentImageIndex = 4;
         }
         updateImageAndDescription();
+    }
+    // Event listener for the Previous button
+    prevButton.addEventListener("click", function() {
+        showPrev();
+        startAutoSlideshow(); // resets the timer
     });
 
     // Event listener for the Next button
     nextButton.addEventListener("click", function() {
-        currentImageIndex = currentImageIndex + 1;
-        if (currentImageIndex > totalImages) {
-            currentImageIndex = 1; // Wrap to the first image
-        }
-        updateImageAndDescription();
+        showNext();
+        startAutoSlideshow(); // resets the timer
     });
+
+    function startAutoSlideshow() {
+        clearInterval(autoSlideInterval); // Clear any existing interval
+        autoSlideInterval = setInterval(showNext, 3000); // Change image every 3 seconds
+    }
 
     // Initial update when the page loads
     updateImageAndDescription();
+    startAutoSlideshow();
 });
